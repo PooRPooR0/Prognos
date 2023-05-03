@@ -127,7 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Antenna.cpp" />
+    <ClCompile Include="DataTransmitter.cpp" />
+    <ClCompile Include="GidroStation.cpp" />
     <ClCompile Include="Prognos.cpp" />
+    <ClCompile Include="ProxyGidroStation.cpp" />
+    <ClCompile Include="TransmitByAir.cpp" />
+    <ClCompile Include="TransmitByWire.cpp" />
+    <ClCompile Include="Wire.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Antenna.h" />
+    <ClInclude Include="DataTransmitter.h" />
+    <ClInclude Include="GidroStation.h" />
+    <ClInclude Include="IGidroStation.h" />
+    <ClInclude Include="ITransmitAction.h" />
+    <ClInclude Include="ProxyGidroStation.h" />
+    <ClInclude Include="TransmitByAir.h" />
+    <ClInclude Include="TransmitByWire.h" />
+    <ClInclude Include="Wire.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
