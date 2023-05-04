@@ -7,7 +7,7 @@ class ProxyGidroStation : public IGidroStation
 private:
 	GidroStation* prox;
 
-	void log();
+	bool checkErrors();
 public:
 	ProxyGidroStation();
 	~ProxyGidroStation();

@@ -1,5 +1,6 @@
 #include "ProxyGidroStation.h"
 #include <iostream>
+#include <ctime>
 
 ProxyGidroStation::ProxyGidroStation() {
 	prox = new GidroStation();
@@ -9,11 +10,17 @@ ProxyGidroStation::~ProxyGidroStation() {
 	delete prox;
 }
 
-void ProxyGidroStation::log() {
-	std::cout << "Proxy: Collecting...\n";
+bool ProxyGidroStation::checkErrors() {
+	srand(time(0));
+	return (rand() % 10) > 1;
 }
 
 void ProxyGidroStation::collectData() {
-	log();
-	prox->collectData();
+	if (checkErrors()) {
+		prox->collectData();
+	}
+	else {
+		std::cout << "Error! Collecting not finished\n";
+	}
+	
 }

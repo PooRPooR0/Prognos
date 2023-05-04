@@ -3,6 +3,6 @@
 class TransmitByWire : public ITransmitAction
 {
 public:
-	virtual void transmit(int) override;
+	void transmit(int) override;
 };
 

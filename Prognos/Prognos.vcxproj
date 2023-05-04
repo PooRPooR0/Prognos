@@ -130,8 +130,12 @@
     <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
     <ClCompile Include="GidroStation.cpp" />
+    <ClCompile Include="MeterWaterLevel.cpp" />
+    <ClCompile Include="MeterWaterSpeed.cpp" />
+    <ClCompile Include="MeterWaterTemperature.cpp" />
     <ClCompile Include="Prognos.cpp" />
     <ClCompile Include="ProxyGidroStation.cpp" />
+    <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="TransmitByAir.cpp" />
     <ClCompile Include="TransmitByWire.cpp" />
     <ClCompile Include="Wire.cpp" />
@@ -141,8 +145,13 @@
     <ClInclude Include="DataTransmitter.h" />
     <ClInclude Include="GidroStation.h" />
     <ClInclude Include="IGidroStation.h" />
+    <ClInclude Include="IMeterAction.h" />
     <ClInclude Include="ITransmitAction.h" />
+    <ClInclude Include="MeterWaterLevel.h" />
+    <ClInclude Include="MeterWaterSpeed.h" />
+    <ClInclude Include="MeterWaterTemperature.h" />
     <ClInclude Include="ProxyGidroStation.h" />
+    <ClInclude Include="Sensor.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />
     <ClInclude Include="Wire.h" />
