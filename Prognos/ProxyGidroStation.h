@@ -9,8 +9,7 @@ private:
 
 	bool checkErrors();
 public:
-	ProxyGidroStation();
-	~ProxyGidroStation();
+	ProxyGidroStation(GidroStation*);
 
 	void collectData() override;
 };

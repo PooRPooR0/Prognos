@@ -2,12 +2,8 @@
 #include <iostream>
 #include <ctime>
 
-ProxyGidroStation::ProxyGidroStation() {
-	prox = new GidroStation();
-}
-
-ProxyGidroStation::~ProxyGidroStation() {
-	delete prox;
+ProxyGidroStation::ProxyGidroStation(GidroStation* target) {
+	prox = target;
 }
 
 bool ProxyGidroStation::checkErrors() {

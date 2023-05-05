@@ -11,8 +11,11 @@ using namespace std;
 
 int main()
 {
-    ProxyGidroStation* gs = new ProxyGidroStation();
-    gs->collectData();
+    GidroStation* gs = new GidroStation();
+
+    ProxyGidroStation* proxyGS = new ProxyGidroStation(gs);
+    proxyGS->collectData();
+    delete proxyGS;
     delete gs;
 
     Antenna* antena = new Antenna(2);
