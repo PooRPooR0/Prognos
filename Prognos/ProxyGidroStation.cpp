@@ -7,7 +7,6 @@ ProxyGidroStation::ProxyGidroStation(GidroStation* target) {
 }
 
 bool ProxyGidroStation::checkErrors() {
-	srand(time(0));
 	return (rand() % 10) > 1;
 }
 

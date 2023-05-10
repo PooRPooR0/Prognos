@@ -81,6 +81,9 @@
     <ClCompile Include="MultiSensor.cpp">
       <Filter>Исходные файлы\Sensor</Filter>
     </ClCompile>
+    <ClCompile Include="FormatDecorator.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ISatellite.h">
@@ -141,6 +144,12 @@
       <Filter>Файлы заголовков\Sensor</Filter>
     </ClInclude>
     <ClInclude Include="MultiSensor.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorDecorator.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="FormatDecorator.h">
       <Filter>Файлы заголовков\Sensor</Filter>
     </ClInclude>
   </ItemGroup>

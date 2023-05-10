@@ -10,6 +10,8 @@
 #include "RetranslatorSatellite.h"
 #include "SatelliteAdapter.h"
 #include "MultiSensor.h"
+#include "FormatDecorator.h"
+#include <ctime>
 
 using namespace std;
 
@@ -80,15 +82,29 @@ void composite() {
     delete ms;
 }
 
+void decorator() {
+    MeterWaterSpeed* mws = new MeterWaterSpeed();
+    Sensor* sensor = new Sensor(mws);
+
+    cout << sensor->performMeter() << " M/S\n";
+    FormatDecorator* sensorWithDecorator = new FormatDecorator(sensor);
+    cout << sensorWithDecorator->performMeter() << " SM/S\n";
+    
+    delete sensorWithDecorator;
+    delete sensor;
+}
+
 int main()
 {
     int mode = 0;
+    srand(time(0));
 
     do {
         cout << "\n\nChoose mode:\n";
         cout << "Lab4 - 1\n";
         cout << "Adapter - 2\n";
         cout << "Composite - 3\n";
+        cout << "Decorator - 4\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -103,6 +119,9 @@ int main()
             break;
         case 3:
             composite();
+            break;
+        case 4:
+            decorator();
             break;
         default:
             break;

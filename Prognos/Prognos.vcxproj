@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
+    <ClCompile Include="FormatDecorator.cpp" />
     <ClCompile Include="GeoSatellite.cpp" />
     <ClCompile Include="GidroStation.cpp" />
     <ClCompile Include="MeterWaterLevel.cpp" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="Antenna.h" />
     <ClInclude Include="DataTransmitter.h" />
+    <ClInclude Include="FormatDecorator.h" />
     <ClInclude Include="GeoSatellite.h" />
     <ClInclude Include="GidroStation.h" />
     <ClInclude Include="IGidroStation.h" />
@@ -162,6 +164,7 @@
     <ClInclude Include="RetranslatorSatellite.h" />
     <ClInclude Include="SatelliteAdapter.h" />
     <ClInclude Include="Sensor.h" />
+    <ClInclude Include="SensorDecorator.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />
     <ClInclude Include="Wire.h" />
