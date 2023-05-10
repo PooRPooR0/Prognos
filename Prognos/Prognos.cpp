@@ -9,6 +9,7 @@
 #include "GeoSatellite.h"
 #include "RetranslatorSatellite.h"
 #include "SatelliteAdapter.h"
+#include "MultiSensor.h"
 
 using namespace std;
 
@@ -59,6 +60,26 @@ void adapter() {
     delete rs;
 }
 
+void composite() {
+    MeterWaterTemperature* mwt = new MeterWaterTemperature();
+    MeterWaterSpeed* mws = new MeterWaterSpeed();
+    Sensor* sensor = new Sensor(mwt);
+    Sensor* sensor2 = new Sensor(mws);
+    
+    MultiSensor* ms = new MultiSensor();
+    ms->add(sensor);
+    ms->add(sensor2);
+    cout << ms->getChildren().size() << "\n";
+    cout << ms->performMeter() << "\n";
+    ms->remove(sensor);
+    cout << ms->getChildren().size() << "\n";
+    ms->remove(sensor2);
+
+    delete sensor;
+    delete sensor2;
+    delete ms;
+}
+
 int main()
 {
     int mode = 0;
@@ -67,6 +88,7 @@ int main()
         cout << "\n\nChoose mode:\n";
         cout << "Lab4 - 1\n";
         cout << "Adapter - 2\n";
+        cout << "Composite - 3\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -78,6 +100,9 @@ int main()
             break;
         case 2:
             adapter();
+            break;
+        case 3:
+            composite();
             break;
         default:
             break;

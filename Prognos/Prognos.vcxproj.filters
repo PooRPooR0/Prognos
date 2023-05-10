@@ -25,6 +25,12 @@
     <Filter Include="Исходные файлы\Lab4">
       <UniqueIdentifier>{c20d55d8-5499-48bf-8192-76a2e5e5beb5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Sensor">
+      <UniqueIdentifier>{aeb246de-d796-4df7-b8fd-9ae8a6a18beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Sensor">
+      <UniqueIdentifier>{69222240-4a10-4e39-ac77-5db7b184dd70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -45,19 +51,7 @@
     <ClCompile Include="GidroStation.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
-    <ClCompile Include="MeterWaterLevel.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="MeterWaterSpeed.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="MeterWaterTemperature.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
     <ClCompile Include="ProxyGidroStation.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="Sensor.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
     <ClCompile Include="TransmitByAir.cpp">
@@ -71,6 +65,21 @@
     </ClCompile>
     <ClCompile Include="Prognos.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensor.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterTemperature.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterLevel.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterSpeed.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiSensor.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -98,25 +107,10 @@
     <ClInclude Include="IGidroStation.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="IMeterAction.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
     <ClInclude Include="ITransmitAction.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="MeterWaterLevel.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="MeterWaterSpeed.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="MeterWaterTemperature.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
     <ClInclude Include="ProxyGidroStation.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="Sensor.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="TransmitByAir.h">
@@ -127,6 +121,27 @@
     </ClInclude>
     <ClInclude Include="Wire.h">
       <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensor.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="MeterWaterTemperature.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="MeterWaterLevel.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="MeterWaterSpeed.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="IMeterAction.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="ISensor.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiSensor.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

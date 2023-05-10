@@ -134,6 +134,7 @@
     <ClCompile Include="MeterWaterLevel.cpp" />
     <ClCompile Include="MeterWaterSpeed.cpp" />
     <ClCompile Include="MeterWaterTemperature.cpp" />
+    <ClCompile Include="MultiSensor.cpp" />
     <ClCompile Include="Prognos.cpp" />
     <ClCompile Include="ProxyGidroStation.cpp" />
     <ClCompile Include="RetranslatorSatellite.cpp" />
@@ -151,10 +152,12 @@
     <ClInclude Include="IGidroStation.h" />
     <ClInclude Include="IMeterAction.h" />
     <ClInclude Include="ISatellite.h" />
+    <ClInclude Include="ISensor.h" />
     <ClInclude Include="ITransmitAction.h" />
     <ClInclude Include="MeterWaterLevel.h" />
     <ClInclude Include="MeterWaterSpeed.h" />
     <ClInclude Include="MeterWaterTemperature.h" />
+    <ClInclude Include="MultiSensor.h" />
     <ClInclude Include="ProxyGidroStation.h" />
     <ClInclude Include="RetranslatorSatellite.h" />
     <ClInclude Include="SatelliteAdapter.h" />
