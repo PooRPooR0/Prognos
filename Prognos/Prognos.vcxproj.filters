@@ -13,87 +13,120 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Satellite">
+      <UniqueIdentifier>{6b5c7c61-e5e6-452e-bbc7-6be53946e14e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Satellite">
+      <UniqueIdentifier>{b4af8c7e-c4d3-4cd9-a596-e13f549cd8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab4">
+      <UniqueIdentifier>{34de0e1c-59ad-4531-b89e-d668f1f2be5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab4">
+      <UniqueIdentifier>{c20d55d8-5499-48bf-8192-76a2e5e5beb5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GeoSatellite.cpp">
+      <Filter>Исходные файлы\Satellite</Filter>
+    </ClCompile>
+    <ClCompile Include="SatelliteAdapter.cpp">
+      <Filter>Исходные файлы\Satellite</Filter>
+    </ClCompile>
+    <ClCompile Include="RetranslatorSatellite.cpp">
+      <Filter>Исходные файлы\Satellite</Filter>
+    </ClCompile>
+    <ClCompile Include="Antenna.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTransmitter.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="GidroStation.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterLevel.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterSpeed.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterWaterTemperature.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyGidroStation.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensor.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="TransmitByAir.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="TransmitByWire.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Wire.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
     <ClCompile Include="Prognos.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="GidroStation.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="ProxyGidroStation.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="TransmitByAir.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="TransmitByWire.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="DataTransmitter.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Antenna.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Wire.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Sensor.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="MeterWaterSpeed.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="MeterWaterTemperature.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="MeterWaterLevel.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IGidroStation.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="ISatellite.h">
+      <Filter>Файлы заголовков\Satellite</Filter>
     </ClInclude>
-    <ClInclude Include="GidroStation.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="GeoSatellite.h">
+      <Filter>Файлы заголовков\Satellite</Filter>
     </ClInclude>
-    <ClInclude Include="ProxyGidroStation.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="SatelliteAdapter.h">
+      <Filter>Файлы заголовков\Satellite</Filter>
     </ClInclude>
-    <ClInclude Include="ITransmitAction.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TransmitByAir.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TransmitByWire.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="DataTransmitter.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="RetranslatorSatellite.h">
+      <Filter>Файлы заголовков\Satellite</Filter>
     </ClInclude>
     <ClInclude Include="Antenna.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="Wire.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="DataTransmitter.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="Sensor.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="GidroStation.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="IGidroStation.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="IMeterAction.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="MeterWaterSpeed.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="MeterWaterTemperature.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="ITransmitAction.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="MeterWaterLevel.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="MeterWaterSpeed.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="MeterWaterTemperature.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyGidroStation.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensor.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="TransmitByAir.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="TransmitByWire.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Wire.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

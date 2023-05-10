@@ -129,12 +129,15 @@
   <ItemGroup>
     <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
+    <ClCompile Include="GeoSatellite.cpp" />
     <ClCompile Include="GidroStation.cpp" />
     <ClCompile Include="MeterWaterLevel.cpp" />
     <ClCompile Include="MeterWaterSpeed.cpp" />
     <ClCompile Include="MeterWaterTemperature.cpp" />
     <ClCompile Include="Prognos.cpp" />
     <ClCompile Include="ProxyGidroStation.cpp" />
+    <ClCompile Include="RetranslatorSatellite.cpp" />
+    <ClCompile Include="SatelliteAdapter.cpp" />
     <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="TransmitByAir.cpp" />
     <ClCompile Include="TransmitByWire.cpp" />
@@ -143,14 +146,18 @@
   <ItemGroup>
     <ClInclude Include="Antenna.h" />
     <ClInclude Include="DataTransmitter.h" />
+    <ClInclude Include="GeoSatellite.h" />
     <ClInclude Include="GidroStation.h" />
     <ClInclude Include="IGidroStation.h" />
     <ClInclude Include="IMeterAction.h" />
+    <ClInclude Include="ISatellite.h" />
     <ClInclude Include="ITransmitAction.h" />
     <ClInclude Include="MeterWaterLevel.h" />
     <ClInclude Include="MeterWaterSpeed.h" />
     <ClInclude Include="MeterWaterTemperature.h" />
     <ClInclude Include="ProxyGidroStation.h" />
+    <ClInclude Include="RetranslatorSatellite.h" />
+    <ClInclude Include="SatelliteAdapter.h" />
     <ClInclude Include="Sensor.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />
