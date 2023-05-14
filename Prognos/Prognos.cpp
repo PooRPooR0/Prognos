@@ -11,6 +11,8 @@
 #include "SatelliteAdapter.h"
 #include "MultiSensor.h"
 #include "FormatDecorator.h"
+#include "Sensors.h"
+#include "SensorsIterator.h"
 #include <ctime>
 
 using namespace std;
@@ -94,6 +96,33 @@ void decorator() {
     delete sensor;
 }
 
+void iteratorf() {
+    MeterWaterSpeed* mws = new MeterWaterSpeed();
+    Sensor* sensor = new Sensor(mws);
+    MeterWaterSpeed* mws2 = new MeterWaterSpeed();
+    Sensor* sensor2 = new Sensor(mws2);
+    MeterWaterSpeed* mws3 = new MeterWaterSpeed();
+    Sensor* sensor3 = new Sensor(mws3);
+    MeterWaterSpeed* mws4 = new MeterWaterSpeed();
+    Sensor* sensor4 = new Sensor(mws4);
+
+    Sensors* s = new Sensors();
+    s->addSensor(sensor);
+    s->addSensor(sensor2);
+    s->addSensor(sensor3);
+    s->addSensor(sensor4);
+
+    GidroStation* gs = new GidroStation(s);
+    gs->collectData();
+    
+    delete gs;
+    delete sensor;
+    delete sensor2;
+    delete sensor3;
+    delete sensor4;
+    delete s;
+}
+
 int main()
 {
     int mode = 0;
@@ -105,6 +134,7 @@ int main()
         cout << "Adapter - 2\n";
         cout << "Composite - 3\n";
         cout << "Decorator - 4\n";
+        cout << "Iterator - 5\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -122,6 +152,9 @@ int main()
             break;
         case 4:
             decorator();
+            break;
+        case 5:
+            iteratorf();
             break;
         default:
             break;

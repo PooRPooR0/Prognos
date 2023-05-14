@@ -31,6 +31,12 @@
     <Filter Include="Исходные файлы\Sensor">
       <UniqueIdentifier>{69222240-4a10-4e39-ac77-5db7b184dd70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\GidroStation">
+      <UniqueIdentifier>{0eca1302-9ea9-40c7-981f-46669aa1c3e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\GidroStation">
+      <UniqueIdentifier>{db21c24d-39a7-42f9-985c-53a4e29b632f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -46,12 +52,6 @@
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
     <ClCompile Include="DataTransmitter.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="GidroStation.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="ProxyGidroStation.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
     <ClCompile Include="TransmitByAir.cpp">
@@ -84,6 +84,18 @@
     <ClCompile Include="FormatDecorator.cpp">
       <Filter>Исходные файлы\Sensor</Filter>
     </ClCompile>
+    <ClCompile Include="Sensors.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorsIterator.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="GidroStation.cpp">
+      <Filter>Исходные файлы\GidroStation</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyGidroStation.cpp">
+      <Filter>Исходные файлы\GidroStation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ISatellite.h">
@@ -104,16 +116,7 @@
     <ClInclude Include="DataTransmitter.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="GidroStation.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="IGidroStation.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
     <ClInclude Include="ITransmitAction.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="ProxyGidroStation.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="TransmitByAir.h">
@@ -151,6 +154,27 @@
     </ClInclude>
     <ClInclude Include="FormatDecorator.h">
       <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="IList.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="IIterator.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensors.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorsIterator.h">
+      <Filter>Файлы заголовков\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyGidroStation.h">
+      <Filter>Файлы заголовков\GidroStation</Filter>
+    </ClInclude>
+    <ClInclude Include="IGidroStation.h">
+      <Filter>Файлы заголовков\GidroStation</Filter>
+    </ClInclude>
+    <ClInclude Include="GidroStation.h">
+      <Filter>Файлы заголовков\GidroStation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

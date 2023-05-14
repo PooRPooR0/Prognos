@@ -141,6 +141,8 @@
     <ClCompile Include="RetranslatorSatellite.cpp" />
     <ClCompile Include="SatelliteAdapter.cpp" />
     <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="Sensors.cpp" />
+    <ClCompile Include="SensorsIterator.cpp" />
     <ClCompile Include="TransmitByAir.cpp" />
     <ClCompile Include="TransmitByWire.cpp" />
     <ClCompile Include="Wire.cpp" />
@@ -152,6 +154,8 @@
     <ClInclude Include="GeoSatellite.h" />
     <ClInclude Include="GidroStation.h" />
     <ClInclude Include="IGidroStation.h" />
+    <ClInclude Include="IIterator.h" />
+    <ClInclude Include="IList.h" />
     <ClInclude Include="IMeterAction.h" />
     <ClInclude Include="ISatellite.h" />
     <ClInclude Include="ISensor.h" />
@@ -165,6 +169,8 @@
     <ClInclude Include="SatelliteAdapter.h" />
     <ClInclude Include="Sensor.h" />
     <ClInclude Include="SensorDecorator.h" />
+    <ClInclude Include="Sensors.h" />
+    <ClInclude Include="SensorsIterator.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />
     <ClInclude Include="Wire.h" />
