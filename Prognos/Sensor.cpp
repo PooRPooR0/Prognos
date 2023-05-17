@@ -1,13 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "Sensor.h"
+#include "Data.h"
+#include <string>
+#include <ctime>
+#include <vector>
 
-Sensor::Sensor(IMeterAction* nMeterAction) {
+using namespace std;
+
+Sensor::Sensor(IMeterAction* nMeterAction, string nName) {
 	meterAction = nMeterAction;
+	name = nName;
 }
 
 Sensor::~Sensor() {
 	delete meterAction;
 }
 
-int Sensor::performMeter() {
-	return meterAction->meter();
+Data* Sensor::performMeter() {
+	time_t now = time(0);
+	tm* gmtm = gmtime(&now);
+	return new Data(name + " " + asctime(gmtm), meterAction->meter());
 }

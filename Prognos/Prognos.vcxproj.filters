@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Файлы заголовков\Satellite">
       <UniqueIdentifier>{6b5c7c61-e5e6-452e-bbc7-6be53946e14e}</UniqueIdentifier>
     </Filter>
@@ -36,6 +32,16 @@
     </Filter>
     <Filter Include="Исходные файлы\GidroStation">
       <UniqueIdentifier>{db21c24d-39a7-42f9-985c-53a4e29b632f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Data">
+      <UniqueIdentifier>{4ebd564a-839d-45c2-b7f1-e1f7109b16ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Data">
+      <UniqueIdentifier>{b1336c39-62b3-4c35-b79d-95ae636db4e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,9 +90,6 @@
     <ClCompile Include="FormatDecorator.cpp">
       <Filter>Исходные файлы\Sensor</Filter>
     </ClCompile>
-    <ClCompile Include="Sensors.cpp">
-      <Filter>Исходные файлы\Sensor</Filter>
-    </ClCompile>
     <ClCompile Include="SensorsIterator.cpp">
       <Filter>Исходные файлы\Sensor</Filter>
     </ClCompile>
@@ -95,6 +98,12 @@
     </ClCompile>
     <ClCompile Include="ProxyGidroStation.cpp">
       <Filter>Исходные файлы\GidroStation</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensors.cpp">
+      <Filter>Исходные файлы\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Исходные файлы\Data</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="GidroStation.h">
       <Filter>Файлы заголовков\GidroStation</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Файлы заголовков\Data</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

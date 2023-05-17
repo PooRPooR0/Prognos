@@ -1,18 +1,19 @@
 #include "MultiSensor.h"
 #include "ISensor.h"
-#include <vector> 
+#include <vector>
+#include "Data.h"
 
 using namespace std;
 
-int MultiSensor::performMeter() {
-	int max = 0;
+Data* MultiSensor::performMeter() {
+	Data* data = new Data("", -1);
 
 	for (auto child = begin(children); child != end(children); child++) {
-		int val = (*child)->performMeter();
-		if (max < val) max = val;
+		Data* val = (*child)->performMeter();
+		data->addChild(val);
 	}
 
-	return max;
+	return data;
 }
 
 void MultiSensor::add(ISensor* sensor) {

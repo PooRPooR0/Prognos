@@ -2,6 +2,10 @@
 #include <iostream>
 #include "Sensors.h"
 #include "IIterator.h"
+#include "Data.h"
+#include <vector>
+
+using namespace std;
 
 GidroStation::GidroStation() {
 	sensors = new Sensors();
@@ -18,7 +22,9 @@ void GidroStation::collectData() {
     while (iter->hasNext()) {
         num++;
         ISensor* sen = iter->next();
-        std::cout << sen->performMeter() << "\n";
+        Data* data = sen->performMeter();
+
+        cout << data->getName() << data->getValue() << "\n";
     }
 
     if (num == 0) std::cout << "There is no sensors(\n";

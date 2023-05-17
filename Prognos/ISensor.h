@@ -1,7 +1,8 @@
 #pragma once
+#include "Data.h"
 class ISensor
 {
 public:
-	virtual int performMeter() = 0;
+	virtual Data* performMeter() = 0;
 };
 

@@ -14,6 +14,8 @@
 #include "Sensors.h"
 #include "SensorsIterator.h"
 #include <ctime>
+#include "Data.h"
+#include <vector>
 
 using namespace std;
 
@@ -34,18 +36,18 @@ void lab4() {
     delete wire;
 
     MeterWaterSpeed* mws = new MeterWaterSpeed();
-    Sensor* sensor = new Sensor(mws);
-    cout << "Water speed: " << sensor->performMeter() << " M/S\n";
+    Sensor* sensor = new Sensor(mws, "Sensor water speed");
+    cout << "Water speed: " << sensor->performMeter()->getValue() << " M/S\n";
     delete sensor;
 
     MeterWaterTemperature* mwt = new MeterWaterTemperature();
-    sensor = new Sensor(mwt);
-    cout << "Water temperature: " << sensor->performMeter() << " C\n";
+    sensor = new Sensor(mwt, "Sensor water temperature");
+    cout << "Water temperature: " << sensor->performMeter()->getValue() << " C\n";
     delete sensor;
 
     MeterWaterLevel* mwl = new MeterWaterLevel();
-    sensor = new Sensor(mwl);
-    cout << "Water level: " << sensor->performMeter() << " M\n";
+    sensor = new Sensor(mwl, "Sensor water level");
+    cout << "Water level: " << sensor->performMeter()->getValue() << " M\n";
     delete sensor;
 }
 
@@ -67,17 +69,23 @@ void adapter() {
 void composite() {
     MeterWaterTemperature* mwt = new MeterWaterTemperature();
     MeterWaterSpeed* mws = new MeterWaterSpeed();
-    Sensor* sensor = new Sensor(mwt);
-    Sensor* sensor2 = new Sensor(mws);
+    Sensor* sensor = new Sensor(mwt, "Sensor water temperature");
+    Sensor* sensor2 = new Sensor(mws, "Sensor water speed");
+    MultiSensor* sensor3 = new MultiSensor();
+    Sensor* sensor4 = new Sensor(mwt, "Sensor water temperature");
+    Sensor* sensor5 = new Sensor(mws, "Sensor water speed");
+
+    sensor3->add(sensor4);
+    sensor3->add(sensor5);
     
     MultiSensor* ms = new MultiSensor();
     ms->add(sensor);
+    ms->add(sensor3);
     ms->add(sensor2);
+    
     cout << ms->getChildren().size() << "\n";
-    cout << ms->performMeter() << "\n";
-    ms->remove(sensor);
-    cout << ms->getChildren().size() << "\n";
-    ms->remove(sensor2);
+    Data::printTree(ms->performMeter(), 1);
+
 
     delete sensor;
     delete sensor2;
@@ -86,11 +94,10 @@ void composite() {
 
 void decorator() {
     MeterWaterSpeed* mws = new MeterWaterSpeed();
-    Sensor* sensor = new Sensor(mws);
-
-    cout << sensor->performMeter() << " M/S\n";
+    Sensor* sensor = new Sensor(mws, "Sensor water speed with decorator");
     FormatDecorator* sensorWithDecorator = new FormatDecorator(sensor);
-    cout << sensorWithDecorator->performMeter() << " SM/S\n";
+    
+    cout << "Value changed on " << sensorWithDecorator->performMeter()->getValue() << " M/S in 4 seconds\n";
     
     delete sensorWithDecorator;
     delete sensor;
@@ -98,13 +105,13 @@ void decorator() {
 
 void iteratorf() {
     MeterWaterSpeed* mws = new MeterWaterSpeed();
-    Sensor* sensor = new Sensor(mws);
+    Sensor* sensor = new Sensor(mws, "Sensor water speed");
     MeterWaterSpeed* mws2 = new MeterWaterSpeed();
-    Sensor* sensor2 = new Sensor(mws2);
+    Sensor* sensor2 = new Sensor(mws2, "Sensor water speed");
     MeterWaterSpeed* mws3 = new MeterWaterSpeed();
-    Sensor* sensor3 = new Sensor(mws3);
+    Sensor* sensor3 = new Sensor(mws3, "Sensor water speed");
     MeterWaterSpeed* mws4 = new MeterWaterSpeed();
-    Sensor* sensor4 = new Sensor(mws4);
+    Sensor* sensor4 = new Sensor(mws4, "Sensor water speed");
 
     Sensors* s = new Sensors();
     s->addSensor(sensor);
