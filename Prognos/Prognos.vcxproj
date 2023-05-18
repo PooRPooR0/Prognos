@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="Data.cpp" />
+    <ClCompile Include="DataStation.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
     <ClCompile Include="FormatDecorator.cpp" />
     <ClCompile Include="GeoSatellite.cpp" />
@@ -151,6 +152,7 @@
   <ItemGroup>
     <ClInclude Include="Antenna.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="DataStation.h" />
     <ClInclude Include="DataTransmitter.h" />
     <ClInclude Include="FormatDecorator.h" />
     <ClInclude Include="GeoSatellite.h" />

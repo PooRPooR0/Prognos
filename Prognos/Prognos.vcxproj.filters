@@ -43,6 +43,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Singleton">
+      <UniqueIdentifier>{8e11e6f8-bfd3-4afc-8be8-31503f4a8bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Singleton">
+      <UniqueIdentifier>{f2a334d0-3272-4e58-acdd-43208776077c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -104,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="Data.cpp">
       <Filter>Исходные файлы\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStation.cpp">
+      <Filter>Исходные файлы\Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +196,9 @@
     </ClInclude>
     <ClInclude Include="Data.h">
       <Filter>Файлы заголовков\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStation.h">
+      <Filter>Файлы заголовков\Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

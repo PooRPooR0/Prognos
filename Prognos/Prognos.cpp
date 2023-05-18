@@ -16,6 +16,7 @@
 #include <ctime>
 #include "Data.h"
 #include <vector>
+#include "DataStation.h"
 
 using namespace std;
 
@@ -130,6 +131,29 @@ void iteratorf() {
     delete s;
 }
 
+void singleton() {
+    DataStation* datastation = DataStation::getInstance();
+    datastation->pushValue(1);
+    datastation->pushValue(2);
+    datastation->pushValue(3);
+    cout << "Data station 1 values: ";
+    vector<int> values = datastation->getValues();
+    for (int i = 0; i < values.size(); i++) cout << values[i] << " ";
+    cout << "\n";
+
+    DataStation* datastation2 = DataStation::getInstance();
+    cout << "Data station 2 values: ";
+    values = datastation->getValues();
+    for (int i = 0; i < values.size(); i++) cout << values[i] << " ";
+    cout << "\n";
+
+    datastation2->pushValue(4);
+    cout << "Data station 1 values after push in 2`nd version: ";
+    values = datastation->getValues();
+    for (int i = 0; i < values.size(); i++) cout << values[i] << " ";
+    cout << "\n";
+}
+
 int main()
 {
     int mode = 0;
@@ -142,6 +166,7 @@ int main()
         cout << "Composite - 3\n";
         cout << "Decorator - 4\n";
         cout << "Iterator - 5\n";
+        cout << "Singleton - 6\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -162,6 +187,9 @@ int main()
             break;
         case 5:
             iteratorf();
+            break;
+        case 6:
+            singleton();
             break;
         default:
             break;
