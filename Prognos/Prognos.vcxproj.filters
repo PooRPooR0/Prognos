@@ -55,6 +55,12 @@
     <Filter Include="Файлы заголовков\FactoryMethod">
       <UniqueIdentifier>{6d5585ac-6ae5-4bbc-a02b-6c285c076c9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\AbstractFactory">
+      <UniqueIdentifier>{8cdd23e4-52d2-4256-9934-4d22c6e5c2eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AbstractFactory">
+      <UniqueIdentifier>{09f408b4-e846-41a6-9a57-205fe57cc33e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -131,6 +137,24 @@
     </ClCompile>
     <ClCompile Include="GroundStationCreator.cpp">
       <Filter>Исходные файлы\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowWSSensor.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FastWSSensor.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowWLSensor.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FastWLSensor.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowSensorFactory.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FastSensorFactory.cpp">
+      <Filter>Исходные файлы\AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +259,33 @@
     </ClInclude>
     <ClInclude Include="GroundStationCreator.h">
       <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="ISensorFactory.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="WLSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowWSSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="FastWSSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="FastWLSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowWLSensor.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowSensorFactory.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="FastSensorFactory.h">
+      <Filter>Файлы заголовков\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -22,6 +22,10 @@
 #include "GroundStation.h"
 #include "GidroStationCreator.h"
 #include "GroundStationCreator.h"
+#include "SlowSensorFactory.h"
+#include "FastSensorFactory.h"
+#include "WLSensor.h"
+#include "WSSensor.h"
 
 using namespace std;
 
@@ -170,6 +174,29 @@ void factoryMethod() {
     delete gs;
 }
 
+void abstractFactory() {
+    SlowSensorFactory* ssf = new SlowSensorFactory();
+    FastSensorFactory* fsf = new FastSensorFactory();
+    WSSensor* slowwss = ssf->createWSSensor();
+    WSSensor* fastwss = fsf->createWSSensor();
+
+    cout << "Slow water speed sensor value: " << slowwss->performMeter() << "\n";
+    cout << "Fast water speed sensor value: " << fastwss->performMeter() << "\n";
+
+    WLSensor* slowwls = ssf->createWLSensor();
+    WLSensor* fastwls = fsf->createWLSensor();
+
+    cout << "Slow water level sensor value: " << slowwls->performMeter() << "\n";
+    cout << "Fast water level sensor value: " << fastwls->performMeter() << "\n";
+
+    delete slowwls;
+    delete fastwls;
+    delete slowwss;
+    delete fastwss;
+    delete fsf;
+    delete ssf;
+}
+
 int main()
 {
     int mode = 0;
@@ -184,6 +211,7 @@ int main()
         cout << "Iterator - 5\n";
         cout << "Singleton - 6\n";
         cout << "Factory Method - 7\n";
+        cout << "Abstract factory - 8\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -210,6 +238,9 @@ int main()
             break;
         case 7:
             factoryMethod();
+            break;
+        case 8:
+            abstractFactory();
             break;
         default:
             break;

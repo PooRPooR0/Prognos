@@ -131,6 +131,9 @@
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="DataStation.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
+    <ClCompile Include="FastSensorFactory.cpp" />
+    <ClCompile Include="FastWLSensor.cpp" />
+    <ClCompile Include="FastWSSensor.cpp" />
     <ClCompile Include="FMGidroStation.cpp" />
     <ClCompile Include="FormatDecorator.cpp" />
     <ClCompile Include="GeoSatellite.cpp" />
@@ -149,6 +152,9 @@
     <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="Sensors.cpp" />
     <ClCompile Include="SensorsIterator.cpp" />
+    <ClCompile Include="SlowSensorFactory.cpp" />
+    <ClCompile Include="SlowWLSensor.cpp" />
+    <ClCompile Include="SlowWSSensor.cpp" />
     <ClCompile Include="TransmitByAir.cpp" />
     <ClCompile Include="TransmitByWire.cpp" />
     <ClCompile Include="Wire.cpp" />
@@ -158,6 +164,9 @@
     <ClInclude Include="Data.h" />
     <ClInclude Include="DataStation.h" />
     <ClInclude Include="DataTransmitter.h" />
+    <ClInclude Include="FastSensorFactory.h" />
+    <ClInclude Include="FastWLSensor.h" />
+    <ClInclude Include="FastWSSensor.h" />
     <ClInclude Include="FMGidroStation.h" />
     <ClInclude Include="FormatDecorator.h" />
     <ClInclude Include="GeoSatellite.h" />
@@ -171,6 +180,7 @@
     <ClInclude Include="IMeterAction.h" />
     <ClInclude Include="ISatellite.h" />
     <ClInclude Include="ISensor.h" />
+    <ClInclude Include="ISensorFactory.h" />
     <ClInclude Include="IStation.h" />
     <ClInclude Include="ITransmitAction.h" />
     <ClInclude Include="MeterWaterLevel.h" />
@@ -184,10 +194,15 @@
     <ClInclude Include="SensorDecorator.h" />
     <ClInclude Include="Sensors.h" />
     <ClInclude Include="SensorsIterator.h" />
+    <ClInclude Include="SlowSensorFactory.h" />
+    <ClInclude Include="SlowWLSensor.h" />
+    <ClInclude Include="SlowWSSensor.h" />
     <ClInclude Include="StationCreator.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />
     <ClInclude Include="Wire.h" />
+    <ClInclude Include="WLSensor.h" />
+    <ClInclude Include="WSSensor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
