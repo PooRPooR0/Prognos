@@ -49,6 +49,12 @@
     <Filter Include="Файлы заголовков\Singleton">
       <UniqueIdentifier>{f2a334d0-3272-4e58-acdd-43208776077c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\FactoryMethod">
+      <UniqueIdentifier>{43d86238-9ef1-42be-b7ae-1dbab3991f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\FactoryMethod">
+      <UniqueIdentifier>{6d5585ac-6ae5-4bbc-a02b-6c285c076c9c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -113,6 +119,18 @@
     </ClCompile>
     <ClCompile Include="DataStation.cpp">
       <Filter>Исходные файлы\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="FMGidroStation.cpp">
+      <Filter>Исходные файлы\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="GroundStation.cpp">
+      <Filter>Исходные файлы\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="GidroStationCreator.cpp">
+      <Filter>Исходные файлы\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="GroundStationCreator.cpp">
+      <Filter>Исходные файлы\FactoryMethod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +217,24 @@
     </ClInclude>
     <ClInclude Include="DataStation.h">
       <Filter>Файлы заголовков\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IStation.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="FMGidroStation.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="GroundStation.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="StationCreator.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="GidroStationCreator.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="GroundStationCreator.h">
+      <Filter>Файлы заголовков\FactoryMethod</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

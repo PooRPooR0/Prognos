@@ -17,6 +17,11 @@
 #include "Data.h"
 #include <vector>
 #include "DataStation.h"
+#include "IStation.h"
+#include "FMGidroStation.h"
+#include "GroundStation.h"
+#include "GidroStationCreator.h"
+#include "GroundStationCreator.h"
 
 using namespace std;
 
@@ -154,6 +159,17 @@ void singleton() {
     cout << "\n";
 }
 
+void factoryMethod() {
+    GidroStationCreator* gsc = new GidroStationCreator();
+    IStation* gs = gsc->createStation();
+    vector<int> data = gs->collectData();
+    GroundStationCreator* grsc = new GroundStationCreator();
+    delete gs;
+    gs = grsc->createStation();
+    data = gs->collectData();
+    delete gs;
+}
+
 int main()
 {
     int mode = 0;
@@ -167,6 +183,7 @@ int main()
         cout << "Decorator - 4\n";
         cout << "Iterator - 5\n";
         cout << "Singleton - 6\n";
+        cout << "Factory Method - 7\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -190,6 +207,9 @@ int main()
             break;
         case 6:
             singleton();
+            break;
+        case 7:
+            factoryMethod();
             break;
         default:
             break;
