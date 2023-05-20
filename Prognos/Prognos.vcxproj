@@ -131,6 +131,8 @@
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="DataStation.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
+    <ClCompile Include="DefaultVision.cpp" />
+    <ClCompile Include="DisabledVision.cpp" />
     <ClCompile Include="FastSensorFactory.cpp" />
     <ClCompile Include="FastWLSensor.cpp" />
     <ClCompile Include="FastWSSensor.cpp" />
@@ -141,6 +143,7 @@
     <ClCompile Include="GidroStationCreator.cpp" />
     <ClCompile Include="GroundStation.cpp" />
     <ClCompile Include="GroundStationCreator.cpp" />
+    <ClCompile Include="InfraredVision.cpp" />
     <ClCompile Include="MeterWaterLevel.cpp" />
     <ClCompile Include="MeterWaterSpeed.cpp" />
     <ClCompile Include="MeterWaterTemperature.cpp" />
@@ -155,6 +158,7 @@
     <ClCompile Include="SlowSensorFactory.cpp" />
     <ClCompile Include="SlowWLSensor.cpp" />
     <ClCompile Include="SlowWSSensor.cpp" />
+    <ClCompile Include="StateGeoSatellite.cpp" />
     <ClCompile Include="TransmitByAir.cpp" />
     <ClCompile Include="TransmitByWire.cpp" />
     <ClCompile Include="Wire.cpp" />
@@ -164,6 +168,8 @@
     <ClInclude Include="Data.h" />
     <ClInclude Include="DataStation.h" />
     <ClInclude Include="DataTransmitter.h" />
+    <ClInclude Include="DefaultVision.h" />
+    <ClInclude Include="DisabledVision.h" />
     <ClInclude Include="FastSensorFactory.h" />
     <ClInclude Include="FastWLSensor.h" />
     <ClInclude Include="FastWSSensor.h" />
@@ -178,11 +184,13 @@
     <ClInclude Include="IIterator.h" />
     <ClInclude Include="IList.h" />
     <ClInclude Include="IMeterAction.h" />
+    <ClInclude Include="InfraredVision.h" />
     <ClInclude Include="ISatellite.h" />
     <ClInclude Include="ISensor.h" />
     <ClInclude Include="ISensorFactory.h" />
     <ClInclude Include="IStation.h" />
     <ClInclude Include="ITransmitAction.h" />
+    <ClInclude Include="IVision.h" />
     <ClInclude Include="MeterWaterLevel.h" />
     <ClInclude Include="MeterWaterSpeed.h" />
     <ClInclude Include="MeterWaterTemperature.h" />
@@ -197,6 +205,7 @@
     <ClInclude Include="SlowSensorFactory.h" />
     <ClInclude Include="SlowWLSensor.h" />
     <ClInclude Include="SlowWSSensor.h" />
+    <ClInclude Include="StateGeoSatellite.h" />
     <ClInclude Include="StationCreator.h" />
     <ClInclude Include="TransmitByAir.h" />
     <ClInclude Include="TransmitByWire.h" />

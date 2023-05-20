@@ -61,6 +61,12 @@
     <Filter Include="Исходные файлы\AbstractFactory">
       <UniqueIdentifier>{09f408b4-e846-41a6-9a57-205fe57cc33e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\State">
+      <UniqueIdentifier>{f7f162f0-4730-4fc2-a89b-45bd8126d44c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\State">
+      <UniqueIdentifier>{547a5a05-becc-49f0-b295-0db530409e54}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoSatellite.cpp">
@@ -155,6 +161,18 @@
     </ClCompile>
     <ClCompile Include="FastSensorFactory.cpp">
       <Filter>Исходные файлы\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultVision.cpp">
+      <Filter>Исходные файлы\State</Filter>
+    </ClCompile>
+    <ClCompile Include="InfraredVision.cpp">
+      <Filter>Исходные файлы\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DisabledVision.cpp">
+      <Filter>Исходные файлы\State</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGeoSatellite.cpp">
+      <Filter>Исходные файлы\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +304,21 @@
     </ClInclude>
     <ClInclude Include="FastSensorFactory.h">
       <Filter>Файлы заголовков\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="IVision.h">
+      <Filter>Файлы заголовков\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultVision.h">
+      <Filter>Файлы заголовков\State</Filter>
+    </ClInclude>
+    <ClInclude Include="InfraredVision.h">
+      <Filter>Файлы заголовков\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DisabledVision.h">
+      <Filter>Файлы заголовков\State</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGeoSatellite.h">
+      <Filter>Файлы заголовков\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -26,6 +26,11 @@
 #include "FastSensorFactory.h"
 #include "WLSensor.h"
 #include "WSSensor.h"
+#include "StateGeoSatellite.h"
+#include "DefaultVision.h"
+#include "InfraredVision.h"
+#include "DisabledVision.h"
+#include "IVision.h"
 
 using namespace std;
 
@@ -197,6 +202,23 @@ void abstractFactory() {
     delete ssf;
 }
 
+void state() {
+    IVision* vis = new DefaultVision();
+    IVision* infraredVision = new InfraredVision();
+    IVision* disabledVision = new DisabledVision();
+    StateGeoSatellite* gs = new StateGeoSatellite(vis);
+    cout << gs->collectData() << "\n";
+    gs->changeState(infraredVision);
+    cout << gs->collectData() << "\n";
+    gs->changeState(disabledVision);
+    cout << gs->collectData() << "\n";
+
+    delete infraredVision;
+    delete vis;
+    delete disabledVision;
+    delete gs;
+}
+
 int main()
 {
     int mode = 0;
@@ -212,6 +234,7 @@ int main()
         cout << "Singleton - 6\n";
         cout << "Factory Method - 7\n";
         cout << "Abstract factory - 8\n";
+        cout << "State - 9\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -241,6 +264,9 @@ int main()
             break;
         case 8:
             abstractFactory();
+            break;
+        case 9:
+            state();
             break;
         default:
             break;
