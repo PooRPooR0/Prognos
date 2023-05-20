@@ -31,6 +31,8 @@
 #include "InfraredVision.h"
 #include "DisabledVision.h"
 #include "IVision.h"
+#include "MementoDataStation.h"
+#include "DataCalculator.h"
 
 using namespace std;
 
@@ -219,6 +221,36 @@ void state() {
     delete gs;
 }
 
+void memento() {
+    MementoDataStation* ds = new MementoDataStation();
+    ds->pushValue(1);
+    ds->pushValue(2);
+    ds->pushValue(3);
+    ds->pushValue(4);
+    cout << "Initial Data Station state: ";
+    vector<int> d = ds->getValues();
+    for (int i = 0; i < d.size(); i++) cout << d[i] << " ";
+    cout << "\n";
+
+    DataCalculator* dc = new DataCalculator(ds);
+    dc->calcMax();
+
+    cout << "Data Station state after calc max: ";
+    vector<int> d2 = ds->getValues();
+    for (int i = 0; i < d2.size(); i++) cout << d2[i] << " ";
+    cout << "\n";
+
+    dc->undo();
+
+    cout << "Data Station state after undo: ";
+    vector<int> d3 = ds->getValues();
+    for (int i = 0; i < d3.size(); i++) cout << d3[i] << " ";
+    cout << "\n";
+
+    delete dc;
+    delete ds;
+}
+
 int main()
 {
     int mode = 0;
@@ -235,6 +267,7 @@ int main()
         cout << "Factory Method - 7\n";
         cout << "Abstract factory - 8\n";
         cout << "State - 9\n";
+        cout << "Memento - 10\n";
         cout << "Exit - 0\n";
 
         cin >> mode;
@@ -267,6 +300,9 @@ int main()
             break;
         case 9:
             state();
+            break;
+        case 10:
+            memento();
             break;
         default:
             break;

@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="Data.cpp" />
+    <ClCompile Include="DataCalculator.cpp" />
     <ClCompile Include="DataStation.cpp" />
     <ClCompile Include="DataTransmitter.cpp" />
     <ClCompile Include="DefaultVision.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="GroundStation.cpp" />
     <ClCompile Include="GroundStationCreator.cpp" />
     <ClCompile Include="InfraredVision.cpp" />
+    <ClCompile Include="MementoDataStation.cpp" />
     <ClCompile Include="MeterWaterLevel.cpp" />
     <ClCompile Include="MeterWaterSpeed.cpp" />
     <ClCompile Include="MeterWaterTemperature.cpp" />
@@ -166,6 +168,7 @@
   <ItemGroup>
     <ClInclude Include="Antenna.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="DataCalculator.h" />
     <ClInclude Include="DataStation.h" />
     <ClInclude Include="DataTransmitter.h" />
     <ClInclude Include="DefaultVision.h" />
@@ -191,6 +194,7 @@
     <ClInclude Include="IStation.h" />
     <ClInclude Include="ITransmitAction.h" />
     <ClInclude Include="IVision.h" />
+    <ClInclude Include="MementoDataStation.h" />
     <ClInclude Include="MeterWaterLevel.h" />
     <ClInclude Include="MeterWaterSpeed.h" />
     <ClInclude Include="MeterWaterTemperature.h" />
